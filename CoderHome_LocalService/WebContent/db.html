@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<pre>
+
+mysql> create database cdhomelport;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use cdhomelport;
+Database changed
+mysql>
+mysql> create table user ( userid int(2) , username varchar(20) ) ;
+Query OK, 0 rows affected (0.13 sec)
+
+mysql> desc user;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| userid   | int(2)      | YES  |     | NULL    |       |
+| username | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.08 sec)
+
+ select * from user where ( email ='11user'  or username = '11user') and password = '123' ;
+ 
+ 
+ insert into user( username , password , email, mobile ) values ( '123df2uer' , 'sdf' ,'em.com' , '123123' );
+
+
+
+mysql> create table contlist ( userid int(3) , contname varchar(20) , mobile bigint(2))
+
+ desc contlist;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| userid   | int(3)      | YES  |     | NULL    |       |
+| contname | varchar(20) | YES  |     | NULL    |       |
+| mobile   | bigint(2)   | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+
+</pre>
+
+</body>
+</html>
