@@ -60,16 +60,24 @@
 <div id='result'></div>
 
 
-
 <div class="alert alert-success">
   <h3> Add New Contact  </h3>  <strong>${contStatusMessage}</strong> 
   </div>
 <form action="addcont" method="post">
-  Contact Name  <input type="text" name="contname"><br/>
-  MOble no <input type="tel" name="mobile" maxlength="10" ><br/>
-  <input type="submit" value="add Contact"><br/>
+ <table>
+		<tr>
+			<td> CONTACT NAME </td> <td> <input type="text" name="contname">  </td>
+		</tr>
+		<tr>
+			<td> CONTACT NUMBER  </td> <td>  <input type="tel" name="mobile" maxlength="10" > </td>
+		</tr>
 
+		<tr>
+			<td> <input type="reset" name="" value="reset"> </td> <td> <input type="submit" value="Add Contact"> </td>
+		</tr>
+	</table>
 </form>
+
 
 </div>
 

@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 			
 			HttpSession session = request.getSession(true); // get the session
 			session.setAttribute("user", reguserBean); // set the obj in session
-			session.setMaxInactiveInterval(60*5); // auto logout after 5 min
+		//	session.setMaxInactiveInterval(60*5); // auto logout after 5 min
 			response.sendRedirect("home.jsp"); // send to home page 
 			
 			//RequestDispatcher rd = request.getRequestDispatcher("home.jsp");

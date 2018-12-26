@@ -7,6 +7,8 @@ import org.audi.model.AllContact;
 import org.audi.model.AllContactDAO;
 import org.audi.model.Contact;
 import org.audi.model.ContactDAO;
+import org.audi.model.DeleteCont;
+import org.audi.model.DeleteContDAO;
 import org.audi.model.UserAc;
 import org.audi.model.UserDAO;
 import org.audi.model.UserLogin;
@@ -15,6 +17,10 @@ import org.audi.model.UserLoginDAO;
 public class Factory {
 	private Factory() {
 		
+	}
+	
+	public static DeleteCont deleteCont() {
+		return (DeleteCont) new DeleteContDAO();
 	}
 	
 	public static UserAc registerUser() {
@@ -32,6 +38,6 @@ public class Factory {
 	
 	public static AllContact allContact(){
 		return  (AllContact) new AllContactDAO();
-		
+	
 	}
 }

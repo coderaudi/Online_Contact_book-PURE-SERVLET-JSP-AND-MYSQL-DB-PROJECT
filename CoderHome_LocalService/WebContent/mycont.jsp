@@ -67,13 +67,15 @@ ArrayList<ContactBean> list =  (ArrayList<ContactBean>) request.getAttribute("al
 <div class="container-fluid">
 
 
-<h1>Your All Contacts </h1>
+	
+<h1>Your All Contacts </h1>  
 
 
 <div class="table-responsive">          
   <table class="table">
      <thead>
 
+		   
             <tr>
                <th>Serial Number</th>
                 <th>Contact Names  </th>
@@ -96,12 +98,21 @@ ArrayList<ContactBean> list =  (ArrayList<ContactBean>) request.getAttribute("al
             %>
         </tbody>
   </table>
-   <form action="deletecont" method="get"> 
- <input type="text" name="mobile">
- <input type="submit" value="delete contact">
+</div>
+</div>
+
+
+<button data-toggle="collapse" data-target="#deletecont_collapse" class="btn btn-danger">Delete Contact</button>
+
+<div id="deletecont_collapse" class="collapse">
+ <form action="deletecont" method="get" > 
+	 <h3>Delete Contact Number <input type="text" name="mobile" required="required" maxlength="10"> 
+		 <input type="submit" value="delete contact">
+	 </h3>
   </form>
-  </div>
-</div></div>
+</div>
+</div>
+
 
 </body>
 </html>

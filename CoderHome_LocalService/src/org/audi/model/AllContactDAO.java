@@ -12,7 +12,7 @@ import org.audi.util.DBcon;
 
 public class AllContactDAO implements AllContact {
 	Connection con = null;
-	// int userid = 12312;
+
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	Integer resc = 0;
