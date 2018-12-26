@@ -14,7 +14,7 @@
  
  <%  
 // retrieve your list from the request, with casting 
-ArrayList<ContactBean> list = (ArrayList<ContactBean>) request.getAttribute("allcont");
+ArrayList<ContactBean> list =  (ArrayList<ContactBean>) request.getAttribute("allcont");
 
 // print the information about every category of the list
 
@@ -96,11 +96,12 @@ ArrayList<ContactBean> list = (ArrayList<ContactBean>) request.getAttribute("all
             %>
         </tbody>
   </table>
-   <form action=" " method="get"> 
- <input type="text" name="mobile"><input type="submit" value="delete cont">
+   <form action="deletecont" method="get"> 
+ <input type="text" name="mobile">
+ <input type="submit" value="delete contact">
   </form>
   </div>
-
+</div></div>
 
 </body>
 </html>
